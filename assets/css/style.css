@@ -1,0 +1,217 @@
+/* base styling */
+*   {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+body {
+    font-family: Arial, sans-seif;
+    line-height: 1.4;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Utility Classes*/
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.text-primary {
+    color: lightblue;
+}
+
+/* navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    padding: 1.5rem 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 3px solid #3693ff;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar h2 a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 2s;
+}
+
+#navbar li a:hover{
+    background-color: #3693ff;
+}
+
+/* Showcase Area */
+#showcase {
+    background: url(../images/465326844-byte-binary-number-code-coding.jpg) no-repeat center center/cover;
+    height: 100vh;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+.showcase-content h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.showcase-content .btn {
+    font-size: 1.5rem;
+    padding: 1rem 10rem;
+    transition: color 0.3s; background: 0.3s;
+}
+
+.showcase-content .btn:hover {
+    background: #3693ff;
+    color: #fff;
+}
+
+.btn {
+    color: #3693ff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #3693ff;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* reusable */
+.has-margin-right {
+    margin-right: 5rem;
+}
+.section-heading {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.bg-dark {
+    background: #333;
+    color: white;
+}
+
+
+
+/* sections: About me */
+#about {
+    padding: 5rem 0;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+#about h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p.lead {
+    margin-bottom: 1rem;
+}
+
+#about .about-content {
+    display: flex;
+}
+
+#about .about-text,
+#about .about-image {
+    flex: 1;
+}
+
+#about .about-text {
+    text-align: justify;
+}
+
+#about .about-image img {
+    display: block;
+    margin-left: auto;
+    width: 55%;
+    border-radius: 40%;
+    margin-top: 60px;
+    float: center;
+    border-style: double;
+    border-color: black;
+}
+
+/* Section: My Work */
+.work-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.work-item:last-child{
+    margin-bottom: 2;
+}
+
+.work-img {
+    width: 50rem;
+    flex: 1;
+}
+
+.work-description{
+    flex: 2;
+
+}
+
+.work-description h1{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+.work-description h6{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    opacity: 0.3;
+}
+
+
+/* Footer */
+.footer {
+    padding: 2.5rem;
+}
+
+footer p { 
+    text-align: center;
+}
+
